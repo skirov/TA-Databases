@@ -10,6 +10,7 @@ class Program
     static void Main(string[] args)
     {
         //DAO.InsertCustomer("ABVWW", "Na Bai Kolio Firmata", "Kolio");
-        DAO.UpdateCustomer("ABVWW", "Firmata na 4i4o Kolio", "Kiko");
+        //DAO.UpdateCustomer("ABVWW", "Firmata na 4i4o Kolio", "Kiko");
+        DAO.DeleteCustomer("ABVCS");
     }
 }
