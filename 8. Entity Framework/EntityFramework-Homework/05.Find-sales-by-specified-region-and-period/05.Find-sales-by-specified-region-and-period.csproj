@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A7DDB555-7021-4BC5-AD97-2273E0188C13}</ProjectGuid>
+    <ProjectGuid>{196BEEEF-C3EA-4CC3-9563-0799666E88FC}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_09.MySQL_Conneciton_And_CRUD</RootNamespace>
-    <AssemblyName>09.MySQL-Conneciton-And-CRUD</AssemblyName>
+    <RootNamespace>_05.Find_sales_by_specified_region_and_period</RootNamespace>
+    <AssemblyName>05.Find-sales-by-specified-region-and-period</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,9 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
-      <HintPath>..\packages\MySql.Data.6.7.4\lib\net40\MySql.Data.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,11 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="09.MySQL-Conneciton-And-CRUD.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\00.EntityFramework.Data\00.EntityFramework.Data.csproj">
+      <Project>{51bfa4f6-3f20-4b38-b406-6a902f0783c5}</Project>
+      <Name>00.EntityFramework.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\01.Northwind.Lib\01.Northwind.Lib.csproj">
+      <Project>{f1f874c6-347b-460f-9996-046905dc5e93}</Project>
+      <Name>01.Northwind.Lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
