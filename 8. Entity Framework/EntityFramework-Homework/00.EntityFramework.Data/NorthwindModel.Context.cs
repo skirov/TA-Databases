@@ -16,7 +16,7 @@ namespace _00.EntityFramework.Data
     using System.Data.Objects.DataClasses;
     using System.Linq;
     
-    public partial class NorthwindEntities : DbContext, IDisposable
+    public partial class NorthwindEntities : DbContext
     {
         public NorthwindEntities()
             : base("name=NorthwindEntities")
