@@ -12,7 +12,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        //You must create a NorthwindTwin database, before you run this script
         IObjectContextAdapter context = new NorthwindEntities();
         string cloneNorthwind = context.ObjectContext.CreateDatabaseScript();
 
