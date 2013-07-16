@@ -37,6 +37,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
@@ -79,6 +80,7 @@
     <Compile Include="Employee.cs">
       <DependentUpon>NorthwindModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeExtended.cs" />
     <Compile Include="Employee_Sales_by_Country_Result.cs">
       <DependentUpon>NorthwindModel.tt</DependentUpon>
     </Compile>
@@ -146,6 +148,12 @@
     <Compile Include="Shipper.cs">
       <DependentUpon>NorthwindModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>NorthwindModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>NorthwindModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Summary_of_Sales_by_Quarter.cs">
       <DependentUpon>NorthwindModel.tt</DependentUpon>
     </Compile>
@@ -153,6 +161,9 @@
       <DependentUpon>NorthwindModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Supplier.cs">
+      <DependentUpon>NorthwindModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
       <DependentUpon>NorthwindModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Ten_Most_Expensive_Products_Result.cs">
