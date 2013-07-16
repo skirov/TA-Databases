@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{48F975E0-F65E-420C-99F8-D1F1DCF69B6B}</ProjectGuid>
+    <ProjectGuid>{6D3984E2-9518-4489-BDC4-E8FD47A424B2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_11.Groups</RootNamespace>
-    <AssemblyName>11.Groups</AssemblyName>
+    <RootNamespace>_07.Two_Contexts_Problem_Fix</RootNamespace>
+    <AssemblyName>07.Two-Contexts-Problem-Fix</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,7 +39,6 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="11.Groups.cs" />
+    <Compile Include="07.Two-Contexts-Problem-Fix.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,9 +54,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\11.Groups.Data\11.Groups.Data.csproj">
-      <Project>{24b5c6ba-9b92-4355-89c9-bfa0a5ba9d11}</Project>
-      <Name>11.Groups.Data</Name>
+    <ProjectReference Include="..\00.EntityFramework.Data\00.EntityFramework.Data.csproj">
+      <Project>{51bfa4f6-3f20-4b38-b406-6a902f0783c5}</Project>
+      <Name>00.EntityFramework.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

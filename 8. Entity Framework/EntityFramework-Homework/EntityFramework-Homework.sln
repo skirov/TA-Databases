@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.Groups.Data", "11.Groups
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.Groups", "11.Groups\11.Groups.csproj", "{48F975E0-F65E-420C-99F8-D1F1DCF69B6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.Two-Contexts-Problem-Fix", "07.Two-Contexts-Problem-Fix\07.Two-Contexts-Problem-Fix.csproj", "{6D3984E2-9518-4489-BDC4-E8FD47A424B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,10 @@ Global
 		{48F975E0-F65E-420C-99F8-D1F1DCF69B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48F975E0-F65E-420C-99F8-D1F1DCF69B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48F975E0-F65E-420C-99F8-D1F1DCF69B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D3984E2-9518-4489-BDC4-E8FD47A424B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D3984E2-9518-4489-BDC4-E8FD47A424B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D3984E2-9518-4489-BDC4-E8FD47A424B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D3984E2-9518-4489-BDC4-E8FD47A424B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

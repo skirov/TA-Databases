@@ -18,8 +18,8 @@ class Program
                 if (context.Groups.Count(x => x.GroupName == "Admins") == 0)
                 {
                     context.Groups.Add(adminGroup);
-                    scope.Complete();
                     context.SaveChanges();
+                    scope.Complete();
                 }
                 else
                 {
@@ -27,7 +27,6 @@ class Program
                     {
                         Console.WriteLine("User already exists.");
                         scope.Dispose();
-                        return;
                     }
 
                     Group currentgroup = context.Groups
@@ -40,8 +39,8 @@ class Program
                     };
 
                     context.Users.Add(newUser);
-                    scope.Complete();
                     context.SaveChanges();
+                    scope.Complete();
                 }
             }
         }
