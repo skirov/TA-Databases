@@ -15,7 +15,7 @@ namespace _01.TryInclude
             foreach (var employee in context.Employees)
             {
                 Console.WriteLine("{0} {1}", employee.FirstName, employee.LastName);
-                Console.WriteLine("{0}", employee.Department);
+                Console.WriteLine("{0}", employee.Department.Name);
                 Console.WriteLine("{0}", employee.Address.Town.Name);
                 Console.WriteLine();
             }
@@ -24,10 +24,10 @@ namespace _01.TryInclude
 
         static void GetInfoWithInclude()
         {
-            foreach (var employee in context.Employees.Include("Address"))
+            foreach (var employee in context.Employees.Include("Address.Town").Include("Department"))
             {
                 Console.WriteLine("{0} {1}", employee.FirstName, employee.LastName);
-                Console.WriteLine("{0}", employee.Department);
+                Console.WriteLine("{0}", employee.Department.Name);
                 Console.WriteLine("{0}", employee.Address.Town.Name);
                 Console.WriteLine();
             }
