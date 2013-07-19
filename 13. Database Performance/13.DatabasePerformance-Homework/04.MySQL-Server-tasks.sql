@@ -4,10 +4,6 @@ DROP PROCEDURE IF EXISTS insert_million_rows $$
 CREATE PROCEDURE InsertMilionRowsInDB () 
 BEGIN
 DECLARE counter INT DEFAULT 0;
-DECLARE minDate datetime;
-	DECLARE maxDate datetime;
-	SET minDate = '1980-01-01 00:00:00';
-	SET maxDate = '2014-01-01 00:00:00';
 	START TRANSACTION;
 	WHILE counter < 1000000 DO
 		INSERT INTO Logs(LogDate, LogText)
