@@ -17,7 +17,6 @@ class Program
             var customers = northwindDBContext.Orders
                                                .Where(o => (o.OrderDate > startDateParsed && o.OrderDate < endDateParsed) || o.ShipCountry == region)
                                                .GroupBy(o => o.ShipName);
-            northwindDBContext.SaveChanges();
 
             foreach (var customer in customers)
             {
