@@ -5,7 +5,7 @@
     using System.Collections;
     using System.Collections.Generic;
 
-    public class RedisDictionary : IEnumerable<string>
+    public class RedisDictionary : IEnumerable<RedisDictItem>
     {
         private RedisClient client;
         private string dictionaryName;
@@ -49,19 +49,23 @@
                 return valueToReturn.StringFromByteArray();
             }
 
-            set 
+            set
             {
                 this.client.HSet(this.dictionaryName, key.ToAsciiCharArray(), value.ToAsciiCharArray());
             }
         }
 
-        public IEnumerator<string> GetEnumerator()
+        public IEnumerator<RedisDictItem> GetEnumerator()
         {
             byte[][] allValues = this.client.HGetAll(this.dictionaryName);
 
-            foreach (var item in allValues)
+            for (int i = 0; i < allValues.Length; i+=2)
             {
-                yield return item.StringFromByteArray();
+                if (i >= allValues.Length)
+                {
+                    break;
+                }
+                yield return new RedisDictItem(allValues[i], allValues[i + 1]);
             }
         }
 

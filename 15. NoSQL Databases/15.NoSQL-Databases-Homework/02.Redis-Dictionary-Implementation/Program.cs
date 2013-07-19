@@ -23,7 +23,7 @@
 
                 foreach (var item in redisDictionary)
                 {
-                    Console.WriteLine(item);
+                    Console.WriteLine("{0} -> {1}", item.Key, item.Value);
                 }
 
                 redisDictionary["kiki"] = "obshtata";
