@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _02.Redis_Dictionary_Implementation
+﻿namespace _02.Redis_Dictionary_Implementation
 {
+    using System;
+
     public static class Engine
     {
         public static void ParseCommand(string command, RedisDictionary redisDictionary)
