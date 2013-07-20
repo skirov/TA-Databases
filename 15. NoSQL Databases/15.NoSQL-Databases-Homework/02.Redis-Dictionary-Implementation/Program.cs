@@ -9,26 +9,44 @@
         {
             using (RedisClient client = new RedisClient())
             {
-                RedisDictionary redisDictionary = new RedisDictionary(client, "redisDict");
+                UI.DrawMenu();
 
-                redisDictionary.Add("gosho", "ribata");
-                redisDictionary.Add("pesho", "akademiqta");
-                redisDictionary.Add("kiki", "razvrata");
+                Console.Write("Please enter a dictionary name: ");
+                string dictionaryName = Console.ReadLine();
 
-                Console.WriteLine(redisDictionary["kiki"]);
+                RedisDictionary redisDictionary = new RedisDictionary(client, dictionaryName);
 
-                Console.WriteLine(redisDictionary.ContainsKey("pesho"));
-                redisDictionary.Remove("pesho");
-                Console.WriteLine(redisDictionary.ContainsKey("pesho"));
-
-                foreach (var item in redisDictionary)
+                while (true)
                 {
-                    Console.WriteLine("{0} -> {1}", item.Key, item.Value);
+                    Console.Write("Please enter a command: ");
+                    string command = Console.ReadLine().Trim();
+
+                    if (command == "Exit")
+                    {
+                        break;
+                    }
+
+                    Engine.ParseCommand(command, redisDictionary);
                 }
 
-                redisDictionary["kiki"] = "obshtata";
+                //redisDictionary.Add("gosho", "ribata");
+                //redisDictionary.Add("pesho", "akademiqta");
+                //redisDictionary.Add("kiki", "razvrata");
 
-                Console.WriteLine(redisDictionary["kiki"]);
+                //Console.WriteLine(redisDictionary["kiki"]);
+
+                //Console.WriteLine(redisDictionary.ContainsKey("pesho"));
+                //redisDictionary.Remove("pesho");
+                //Console.WriteLine(redisDictionary.ContainsKey("pesho"));
+
+                //foreach (var item in redisDictionary)
+                //{
+                //    Console.WriteLine("{0} -> {1}", item.Key, item.Value);
+                //}
+
+                //redisDictionary["kiki"] = "obshtata";
+
+                //Console.WriteLine(redisDictionary["kiki"]);
             }
         }
     }

@@ -23,7 +23,14 @@
 
         public void Remove(string key)
         {
-            this.client.HDel(this.dictionaryName, key.ToAsciiCharArray());
+            if (ContainsKey(key))
+            {
+                this.client.HDel(this.dictionaryName, key.ToAsciiCharArray());
+            }
+            else
+            {
+                throw new ArgumentException("The key does not exist.");
+            }
         }
 
         public bool ContainsKey(string key)
