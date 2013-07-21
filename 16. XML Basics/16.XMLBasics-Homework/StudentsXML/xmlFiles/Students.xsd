@@ -9,7 +9,7 @@
               <xs:element name="name" type="xs:string" />
               <xs:element name="gender" type="xs:string" />
               <xs:element name="birthDate" type="xs:date" />
-              <xs:element name="phoneNumber" type="xs:string" />
+              <xs:element name="phoneNumber" type="xs:unsignedInt" />
               <xs:element name="email" type="xs:string" />
               <xs:element name="course" type="xs:string" />
               <xs:element name="specialty" type="xs:string" />
@@ -17,11 +17,15 @@
               <xs:element name="takenExams">
                 <xs:complexType>
                   <xs:sequence>
-                    <xs:choice maxOccurs="unbounded">
-                      <xs:element name="examName" type="xs:string" />
-                      <xs:element name="examTutor" type="xs:string" />
-                      <xs:element name="score" type="xs:string" />
-                    </xs:choice>
+                    <xs:element maxOccurs="unbounded" name="exam">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="examName" type="xs:string" />
+                          <xs:element name="examTutor" type="xs:string" />
+                          <xs:element name="score" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>

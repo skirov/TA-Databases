@@ -11,12 +11,16 @@
     <specialty>IT</specialty>
     <facultyNumber>11111111</facultyNumber>
     <takenExams>
-      <examName>Math-Part 1</examName>
-      <examTutor>Kiro Vodkata</examTutor>
-      <score>99/100</score>
-      <examName>Math-Part 2</examName>
-      <examTutor>Shashav Proffessor</examTutor>
-      <score>50/100</score>
+      <exam>
+        <examName>Math-Part 1</examName>
+        <examTutor>Kiro Vodkata</examTutor>
+        <score>99/100</score>
+      </exam>
+      <exam>
+        <examName>Math-Part 2</examName>
+        <examTutor>Shashav Proffessor</examTutor>
+        <score>50/100</score>
+      </exam>
     </takenExams>
     <enrollmentInfo>
       <enrollmentDate>2009-12-01</enrollmentDate>
@@ -38,9 +42,11 @@
     <specialty>IT</specialty>
     <facultyNumber>222222222</facultyNumber>
     <takenExams>
-      <examName>Algorighms-Part 1</examName>
-      <examTutor>Svetlin Nakov</examTutor>
-      <score>84/100</score>
+      <exam>
+        <examName>Algorighms-Part 1</examName>
+        <examTutor>Svetlin Nakov</examTutor>
+        <score>84/100</score>
+      </exam>
     </takenExams>
     <enrollmentInfo>
       <enrollmentDate>2009-08-11</enrollmentDate>

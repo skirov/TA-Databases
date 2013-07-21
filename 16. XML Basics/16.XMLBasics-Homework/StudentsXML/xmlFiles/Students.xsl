@@ -35,7 +35,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
               <li>
                 Taken Exams:
                 <ol>
-                  <xsl:for-each select="student/takenExams">
+                  <xsl:for-each select="takenExams/exam">
                     <li>
                       <xsl:value-of select="examName"/>
                       <xsl:value-of select="examTutor"/>
@@ -44,15 +44,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                   </xsl:for-each>
                 </ol>
               </li>
-              <li>
+              <!--<li>
                 Enrollment information:
                 <ol>
-                  <xsl:for-each select="student/enrollmentInfo">
                     <li>
                       <xsl:value-of select="enrollmentDate"/>
                       <xsl:value-of select="examScore"/>
                     </li>
-                  </xsl:for-each>
                 </ol>
               </li>
               <li>
@@ -64,7 +62,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     </li>
                   </xsl:for-each>
                 </ol>
-              </li>
+              </li>-->
             </ul>
           </div>
         </xsl:for-each>
