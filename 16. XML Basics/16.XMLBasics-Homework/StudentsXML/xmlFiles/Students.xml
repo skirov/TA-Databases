@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="Students.xsl"?>
 <class xmlns="urn:students" name="Students in class">
-
   <student>
     <name>Ivan Ivanov</name>
     <gender>Male</gender>
@@ -31,7 +31,6 @@
       <endorsedBy>Maria Petrova</endorsedBy>
     </teacherEndorsements>
   </student>
-
   <student>
     <name>Kiril Ivanov</name>
     <gender>Male</gender>
@@ -57,5 +56,4 @@
       <endorsedBy>Donka Stoqnova</endorsedBy>
     </teacherEndorsements>
   </student>
-
 </class>
