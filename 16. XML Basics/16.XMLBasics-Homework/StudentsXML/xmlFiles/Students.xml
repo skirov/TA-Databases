@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class xmlns="urn:students" name="Students in class">
+
+  <student>
+    <name>Ivan Ivanov</name>
+    <gender>Male</gender>
+    <birthDate>1990-01-01</birthDate>
+    <phoneNumber>088888888</phoneNumber>
+    <email>ivan@ivanov.com</email>
+    <course>Math</course>
+    <specialty>IT</specialty>
+    <facultyNumber>11111111</facultyNumber>
+    <takenExams>
+      <examName>Math-Part 1</examName>
+      <examTutor>Kiro Vodkata</examTutor>
+      <score>99/100</score>
+      <examName>Math-Part 2</examName>
+      <examTutor>Shashav Proffessor</examTutor>
+      <score>50/100</score>
+    </takenExams>
+    <enrollmentInfo>
+      <enrollmentDate>2009-12-01</enrollmentDate>
+      <examScore>80/100</examScore>
+    </enrollmentInfo>
+    <teacherEndorsements>
+      <endorsedBy>Peter Petrov</endorsedBy>
+      <endorsedBy>Maria Petrova</endorsedBy>
+    </teacherEndorsements>
+  </student>
+
+  <student>
+    <name>Kiril Ivanov</name>
+    <gender>Male</gender>
+    <birthDate>1990-01-01</birthDate>
+    <phoneNumber>0899999999</phoneNumber>
+    <email>Kiril@kirilivanov.com</email>
+    <course>Algorighms</course>
+    <specialty>IT</specialty>
+    <facultyNumber>222222222</facultyNumber>
+    <takenExams>
+      <examName>Algorighms-Part 1</examName>
+      <examTutor>Svetlin Nakov</examTutor>
+      <score>84/100</score>
+    </takenExams>
+    <enrollmentInfo>
+      <enrollmentDate>2009-08-11</enrollmentDate>
+      <examScore>93/100</examScore>
+    </enrollmentInfo>
+    <teacherEndorsements>
+      <endorsedBy>Mihail Mishev</endorsedBy>
+      <endorsedBy>Donka Stoqnova</endorsedBy>
+    </teacherEndorsements>
+  </student>
+
+</class>
