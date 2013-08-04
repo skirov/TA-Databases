@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<albums>
+	<album>
+		<name>Rap album</name>
+		<artist>Eminem</artist>
+	</album>
+	<album>
+		<name>Rap album</name>
+		<artist>Eminem</artist>
+	</album>
+	<album>
+		<name>Trance album</name>
+		<artist>Tiesto</artist>
+	</album>
+</albums>

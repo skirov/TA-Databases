@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<directories>
+	<directory name="09.TraverseDirectoryAndCreatePdf">
+		<file>09.TraverseDirectoryAndCreatePdf.csproj</file>
+		<file>App.config</file>
+		<file>directory.xml</file>
+		<file>Program.cs</file>
+		<directory name="bin">
+			<directory name="Debug">
+				<file>09.TraverseDirectoryAndCreatePdf.exe</file>
+				<file>09.TraverseDirectoryAndCreatePdf.exe.config</file>
+				<file>09.TraverseDirectoryAndCreatePdf.pdb</file>
+				<file>09.TraverseDirectoryAndCreatePdf.vshost.exe</file>
+				<file>09.TraverseDirectoryAndCreatePdf.vshost.exe.config</file>
+			</directory>
+		</directory>
+		<directory name="obj">
+			<directory name="Debug">
+				<file>09.TraverseDirectoryAndCreatePdf.csproj.FileListAbsolute.txt</file>
+				<file>09.TraverseDirectoryAndCreatePdf.exe</file>
+				<file>09.TraverseDirectoryAndCreatePdf.pdb</file>
+				<file>DesignTimeResolveAssemblyReferencesInput.cache</file>
+				<file>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</file>
+				<file>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</file>
+				<file>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</file>
+			</directory>
+		</directory>
+		<directory name="Properties">
+			<file>AssemblyInfo.cs</file>
+		</directory>
+	</directory>
+</directories>

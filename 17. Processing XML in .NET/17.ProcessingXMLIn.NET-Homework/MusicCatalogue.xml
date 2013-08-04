@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<catalogue>
+  <album>
+    <name>Rap album</name>
+    <artist>Eminem</artist>
+    <year>2004</year>
+    <producer>Eminem's Produceer</producer>
+    <price>12.99</price>
+    <songs>
+      <song>
+        <titile>Mockingbird</titile>
+        <duration>04:00</duration>
+      </song>
+      <song>
+        <titile>Lose yourself</titile>
+        <duration>03:42</duration>
+      </song>
+      <song>
+        <titile>Cleaning out my closet</titile>
+        <duration>04:22</duration>
+      </song>
+    </songs>
+  </album>
+  
+  
+  <album>
+    <name>Rap album</name>
+    <artist>Eminem</artist>
+    <year>2004</year>
+    <producer>Eminem's Produceer</producer>
+    <price>22.99</price>
+    <songs>
+      <song>
+        <titile>Mockingbird</titile>
+        <duration>04:00</duration>
+      </song>
+      <song>
+        <titile>Lose yourself</titile>
+        <duration>03:42</duration>
+      </song>
+      <song>
+        <titile>Cleaning out my closet</titile>
+        <duration>04:22</duration>
+      </song>
+    </songs>
+  </album>
+  
+  <album>
+    <name>Trance album</name>
+    <artist>Tiesto</artist>
+    <year>2004</year>
+    <producer>Tiesto's Produceer</producer>
+    <price>12.99</price>
+    <songs>
+      <song>
+        <titile>Mockingbird</titile>
+        <duration>04:00</duration>
+      </song>
+      <song>
+        <titile>Lose yourself</titile>
+        <duration>03:42</duration>
+      </song>
+      <song>
+        <titile>Cleaning out my closet</titile>
+        <duration>04:22</duration>
+      </song>
+    </songs>
+  </album>
+</catalogue>
